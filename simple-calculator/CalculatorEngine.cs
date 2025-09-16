@@ -8,27 +8,27 @@ namespace SimpleCalculator
         {
             double result = 0;
 
-            if (argOperation == "+" || argOperation.ToLower() == "add")
+            if (argOperation == "+")
             {
                 result = argFirstNumber + argSecondNumber;
             }
             
-            else if (operation == "-" || operation == "subtract")
-                result = firstNumber - secondNumber;
+            else if (operation == "-")
+                result = argfirstNumber - argsecondNumber;
 
-            else if (operation == "*" || operation == "multiply")
-                result = firstNumber * secondNumber;
+            else if (operation == "*")
+                result = argfirstNumber * argsecondNumber;
 
-            else if (operation == "/" || operation == "divide")
+            else if (operation == "/")
             {
                 if (secondNumber == 0)
                 {
                     Console.WriteLine("Cannot divide by zero.");
                     return 0;
                 }
-                result = firstNumber / secondNumber;
+                result = argfirstNumber / argsecondNumber;
             }
-          else if (operation == "^" || operation == "power")
+          else if (operation == "^")
             {
                 if (secondNumber < 0 || secondNumber % 1 != 0)
                 {
