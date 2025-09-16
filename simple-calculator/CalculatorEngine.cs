@@ -13,13 +13,13 @@ namespace SimpleCalculator
                 result = FirstNumber + SecondNumber;
             }
             
-            else if (operation == "-")
+            else if (Operation == "-")
                 result = firstNumber - secondNumber;
 
-            else if (operation == "*")
+            else if (Operation == "*")
                 result = firstNumber * secondNumber;
 
-            else if (operation == "/")
+            else if (Operation == "/")
             {
                 if (secondNumber == 0)
                 {
