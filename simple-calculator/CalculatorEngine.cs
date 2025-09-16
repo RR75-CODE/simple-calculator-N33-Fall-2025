@@ -4,7 +4,7 @@ namespace SimpleCalculator
 {
     public class CalculatorEngine
     {
-        public double Calculate(string Operation, double FirstNumber, double SecondNumber)
+        public double Calculate(string Operation, double firstNumber, double secondNumber)
         {
             double result = 0;
 
