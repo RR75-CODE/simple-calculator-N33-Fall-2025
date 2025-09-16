@@ -9,15 +9,15 @@ namespace SimpleCalculator
         {
             try
             {
-                // Class to convert user input
                 InputConverter inputConverter = new InputConverter();
-
-                // Class to perform actual calculations
                 CalculatorEngine calculatorEngine = new CalculatorEngine();
+                
                 Console.WriteLine("Welcome to Simple Calculator\nEnter  your first number then press Enter:");
                 double firstNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
+                
                 Console.WriteLine("Enter  your Second number then press Enter:");
                 double secondNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
+                
                 Console.WriteLine("Enter operation like + or add number then press Enter:");
                 string operation = Console.ReadLine();
 
@@ -25,10 +25,13 @@ namespace SimpleCalculator
 
                 Console.WriteLine(result);
 
+                Console.WriteLine("The value " + firstNumber.ToString("0.00") + " " +
+                                 operation + " the value " + secondNumber.ToString("0.00") +
+                                 " is equal to " + result.ToString("0.00") + ".");
+
             }
             catch (Exception ex)
             {
-                // Normally, we'd log this error to a file.
                 Console.WriteLine(ex.Message);
             }
 
