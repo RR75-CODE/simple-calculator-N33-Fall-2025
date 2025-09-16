@@ -4,20 +4,20 @@ namespace SimpleCalculator
 {
     public class CalculatorEngine
     {
-        public double Calculate(string argOperation, double argFirstNumber, double argSecondNumber)
+        public double Calculate(string Operation, double FirstNumber, double SecondNumber)
         {
             double result = 0;
 
-            if (argOperation == "+")
+            if (Operation == "+")
             {
-                result = argFirstNumber + argSecondNumber;
+                result = FirstNumber + SecondNumber;
             }
             
             else if (operation == "-")
-                result = argfirstNumber - argsecondNumber;
+                result = firstNumber - secondNumber;
 
             else if (operation == "*")
-                result = argfirstNumber * argsecondNumber;
+                result = firstNumber * secondNumber;
 
             else if (operation == "/")
             {
@@ -26,7 +26,7 @@ namespace SimpleCalculator
                     Console.WriteLine("Cannot divide by zero.");
                     return 0;
                 }
-                result = argfirstNumber / argsecondNumber;
+                result = firstNumber / secondNumber;
             }
           else if (operation == "^")
             {
